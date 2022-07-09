@@ -12,5 +12,5 @@ if today.weekday()==4:
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as connection:
         connection.login(user=EMAIL, password=PASSWORD)
         connection.sendmail(from_addr=EMAIL,
-        to_addrs="manon1606manon@gmail.com",
+        to_addrs="",
         msg=f"Subject:Weekly Quote\n\n{choice(quotes)}")
