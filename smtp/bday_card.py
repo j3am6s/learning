@@ -2,9 +2,10 @@ import smtplib
 import datetime as dt
 import pandas as pd
 import random
+import os
 
-EMAIL = ""
-PASSWORD = ""
+EMAIL = os.environ.get("your_email")
+PASSWORD = os.environ.get("your_password")
 
 now = dt.datetime.now()
 month = now.month
@@ -20,7 +21,7 @@ for person in people:
         card = card.replace("[NAME]", person["name"])
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as connection:
             connection.login(user=EMAIL, password=PASSWORD)
-            connection.sendmail(from_addr=EMAIL, to_addrs="",
+            connection.sendmail(from_addr=EMAIL, to_addrs=os.environ.get("person_who_s_birthday_it_is"),
             msg=f"Subject:Happy Birthday\n\n{card}")
 
 
