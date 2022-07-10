@@ -1,12 +1,13 @@
 import requests
 from datetime import datetime
 import smtplib
+import os
 
 LAT = 51.509865
 LNG = -0.118092
 
-EMAIL = ""
-PASSWORD=""
+EMAIL = os.environ.get("your_email")
+PASSWORD = os.environ.get("your_password")
 
 #iss API
 iss_info = requests.get("http://api.open-notify.org/iss-now.json")
@@ -43,7 +44,7 @@ if within_5(LAT, iss_latitude) and within_5(LNG, iss_longitude):
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as connection:
             connection.login(user=EMAIL, password=PASSWORD)
             connection.sendmail(from_addr=EMAIL,
-            to_addrs="",
+            to_addrs=os.environ.get("recipient_email"),
             msg="Subject:Look Up\n\nYou can see the ISS")
             
             
