@@ -64,7 +64,7 @@ update_parameters = {
 
 update_endpoint = f"{pixela_endpoint}/{user_parameters['username']}/graphs/{graph_configuration['id']}/{today}"
 
-update = requests.puzt(url=update_endpoint, json=update_parameters, headers=headers)
+update = requests.put(url=update_endpoint, json=update_parameters, headers=headers)
 print(update.text)
 
 
