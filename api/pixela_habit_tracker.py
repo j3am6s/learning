@@ -7,7 +7,7 @@ user_parameters = {
     "token": os.environ.get("token"),
     "username": os.environ.get("username"),
     "agreeTermsOfService": "yes",
-    "notMinor": "yes"
+    "notMinor": "yes",
 }
 
 pixela_endpoint = "https://pixe.la/v1/users"
