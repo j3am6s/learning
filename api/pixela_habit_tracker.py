@@ -23,7 +23,7 @@ graph_configuration = {
     "name": "mcdo",
     "unit": "hours",
     "type": "int",
-    "color": "momiji"
+    "color": "momiji",
 }
 
 headers = {
