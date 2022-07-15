@@ -24,7 +24,7 @@ add = {
 "user": {
     "firstName": first_name,
     "lastName": last_name,
-    "email": email,
+    "email": email
 }
 } 
 
