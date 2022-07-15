@@ -16,7 +16,7 @@ class FlightData:
             "fly_from": "LON",
             "fly_to": destination,
             "date_from": today,
-            "date_to": today,
+            "date_to": today
         }
 
         flights = requests.get("https://tequila-api.kiwi.com/v2/search?", params=parameters, headers=headers) 
