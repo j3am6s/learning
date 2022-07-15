@@ -10,7 +10,7 @@ class DataManager:
         for i in range(2, 11):
             change = {
                 "price": {
-                    'iataCode': iata[i-2]
+                    'iataCode': iata[i-2],
                 }
             }
             requests.put(f"https://api.sheety.co/13fe58756d09cfaa4bea89b12756f4f3/flightMinPrice/prices/{i}", json=change, headers=headers)
