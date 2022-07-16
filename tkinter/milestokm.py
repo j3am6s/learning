@@ -4,7 +4,7 @@ window = tk.Tk()
 window.minsize()
 window.config(padx=50, pady=50)
 
-#is equal to LABEL
+#is_equal_to LABEL
 is_equal_to = tk.Label(text="is equal to")
 is_equal_to.grid(row=1, column=0)
 
