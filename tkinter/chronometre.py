@@ -1,5 +1,6 @@
 import tkinter as tk
 
+
 window = tk.Tk()
 window.minsize()
 window.config(padx=10, pady=10)
@@ -37,5 +38,6 @@ def stop_chrono():
 
 stop = tk.Button(text="stop", width=8, command=stop_chrono)
 stop.grid(row=2, column=1)
+
 
 window.mainloop()
