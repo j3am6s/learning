@@ -21,7 +21,7 @@ day1 = (today - dt.timedelta(days=4)).strftime('%Y-%m-%d')
 stock_parameters = {
     "function": "TIME_SERIES_DAILY",
     "symbol": STOCK,
-    "apikey": STOCK_PRICE_API_KEY
+    "apikey": STOCK_PRICE_API_KEY,
 }
 
 stock_response = requests.get("https://www.alphavantage.co/query", params=stock_parameters)
