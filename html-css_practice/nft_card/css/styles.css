@@ -1,0 +1,73 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.challenge {
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 18px;
+    position: relative;
+}
+
+.nft {
+    width: 300px;
+    border-radius: 12px;
+}
+
+.title {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+}
+
+.eth {
+    position: absolute;
+    left: 30px;
+    top: 440px;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    display: inline-block;
+}
+
+.days {
+    position: absolute;
+    right: 30px;
+    top: 440px;
+}
+
+.time {
+    color: hsl(215, 51%, 70%);
+    display: inline-block;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border: solid 1px hsl(215, 32%, 27%);
+}
+
+.guy {
+    width: 40px;
+    float: left;
+    border: solid white 1px;
+    -moz-border-radius:75px;
+    -webkit-border-radius: 75px;
+    margin-right: 17px;
+}
+
+.avatar {
+    color: hsl(215, 51%, 70%);
+    padding-top: 10px;
+}
+
