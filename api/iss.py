@@ -47,4 +47,3 @@ if within_5(LAT, iss_latitude) and within_5(LNG, iss_longitude):
             to_addrs=os.environ.get("recipient_email"),
             msg="Subject:Look Up\n\nYou can see the ISS")
             
-            
