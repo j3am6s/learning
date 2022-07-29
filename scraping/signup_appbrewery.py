@@ -18,4 +18,3 @@ button = driver.find_element(By.CSS_SELECTOR, "form button")
 button.click()
 
 driver.quit()
-
