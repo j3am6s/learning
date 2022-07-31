@@ -1,0 +1,89 @@
+body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+.challenge {
+    background-image: url(../images/illustration-hero.svg);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    width: 350px;
+    margin: 50px auto;
+    background-color: white;
+}
+
+.title {
+    padding-top: 250px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: 22px;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 15px;
+    color: hsl(224, 23%, 55%);
+    line-height: 2;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    margin: 20px;
+    width: 310px;
+    height: 80px;
+}
+
+.ehehe {
+    display: inline-block;
+    margin: 8px;
+}
+
+img {
+    float: left;
+    margin: 15px 7px;
+}
+
+.annual {
+    font-weight: 700;
+    color:hsl(223, 47%, 23%);
+    font-size: 15px;
+    padding: 0;
+    margin: 8px;
+}
+
+.price {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+    padding: 0;
+    margin: 8px;
+}
+
+.blabla {
+    float: right;
+    color:hsl(245, 75%, 52%);
+    margin: 10px;
+    padding: 18px 5px;
+}
+
+.payment {
+    border-radius: 12px;
+    margin: 20px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 4px;
+    box-shadow: 0px 8px 24px gray;
+    font-weight: 700;
+}
+
+.cancel {
+    padding: 10px;
+    padding-top: 0;
+    font-weight: 700;
+    color:hsl(224, 23%, 55%);
+}
+
