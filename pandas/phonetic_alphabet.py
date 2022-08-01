@@ -8,4 +8,3 @@ name = input("What's your name? ")
 nom = [dic[letter.upper()] for letter in name]
 
 print(nom)
-
