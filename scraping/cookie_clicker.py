@@ -24,7 +24,7 @@ def upgrades():
     for i in range(8):
         p = price[i].text.split(" - ")[1].replace(",", "")
         prices.append(int(p))
-    money = int(driver.find_element(By.ID, "money").text)
+    money = int(driver.find_element(By.ID, "money").text.replace(",",""))
     price[prices.index(expensive(money, prices))].click()
 
 schedule.every(5).seconds.do(upgrades)
