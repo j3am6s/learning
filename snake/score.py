@@ -7,7 +7,7 @@ class Score(Turtle):
         self.hideturtle()
         self.penup()
         with open("snake/data.txt") as file:
-            self.highscore = int(file.read())
+            self.highscore = int(float(file.read()))
         self.score = 0
         self.ecrire()
     def ecrire(self):
